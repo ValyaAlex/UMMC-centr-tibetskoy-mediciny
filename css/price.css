@@ -5,9 +5,9 @@
 }
 
 .price .bg {
-    top: 5%;
+    top: -10%;
     left: 0;
-    transform: scale(-1, 1) rotate(40deg);
+    transform: scale(-1.5, 1.5) rotate(100deg);
     background-size: 100% 100%;
 }
 
