@@ -6,17 +6,17 @@
 
 .bg {
     position: absolute;
-    top: 1%;
+    top: 0%;
     left: -5%;
     width: 100%;
     height: 100%;
-    background-image: url(../img/bg.webp);
+    background-image: url(../img/bg.svg);
     background-position: center top 10%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: .4;
     z-index: -1;
-    transform: rotate(27deg);
+    transform: scale(1.5) rotate(-73deg);
 }
 
 .difference__text {
