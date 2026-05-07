@@ -1,5 +1,5 @@
 .contacts {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
     font-size: 20px;
 }
@@ -47,9 +47,9 @@
     width: fit-content;
     padding: 0px 20px;
     line-height: 45px;
-  font-size: 16px;
-  border-radius: 6px;
-  transition: background-color .3s;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color .3s;
 }
 
 .contacts__mail:hover {
@@ -125,8 +125,8 @@ ymaps ymaps>[class*=balloon__tail]:after {
 }
 
 ymaps .ymaps-2-1-79-balloon__layout {
-width: 270px;
-border-radius: 70px;
+    width: 270px;
+    border-radius: 70px;
 }
 
 ymaps .ymaps-2-1-79-balloon {

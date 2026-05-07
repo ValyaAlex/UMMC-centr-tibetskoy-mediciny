@@ -2,6 +2,16 @@
     .difference__grid {
         max-width: 100%;
     }
+
+    .reviews .swiper-button-next,
+    .reviews .swiper-button-prev {
+        top: 100%;
+    }
+
+    .reviews .swiper-button-prev,
+    .reviews .swiper-rtl .swiper-button-next {
+        right: 15.5%;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -13,6 +23,7 @@
     .modal {
         top: 5%;
     }
+
 }
 
 @media (max-width: 980px) {
@@ -58,6 +69,11 @@
     .price__parent {
         position: relative;
         width: calc((100% / 2) - 10px)
+    }
+
+    .reviews .swiper-button-prev,
+    .reviews .swiper-rtl .swiper-button-next {
+        right: 17.5%;
     }
 }
 
@@ -180,6 +196,31 @@
     .modal__list .modal__item {
         font-size: 14px;
     }
+
+    .reviews .swiper-button-next,
+    .reviews .swiper-button-prev {
+        display: none;
+    }
+
+
+    .reviews .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 0px;
+    }
+
+    .reviews .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width,
+                var(--swiper-pagination-bullet-size, 8px));
+        border-radius: 20px;
+        transition: width 0.4s ease;
+    }
+
+    .reviews .swiper-pagination-bullet-active {
+        background: var(--white);
+        width: 30px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -280,6 +321,10 @@
 
     .contacts-info span {
         font-size: 14px;
+    }
+
+    .swiper {
+        height: 450px;
     }
 
 }
