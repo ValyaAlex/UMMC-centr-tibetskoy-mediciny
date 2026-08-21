@@ -1,0 +1,15 @@
+@import 'normalize.css';
+@import 'common.css';
+@import 'header.css';
+@import 'hero.css';
+@import 'about.css';
+@import 'difference.css';
+@import 'recommendations.css';
+@import 'specialists.css';
+@import 'diagnostic.css';
+@import 'therapy.css';
+@import 'price.css';
+@import 'reviews.css';
+@import 'questions.css';
+@import 'contacts.css';
+@import 'media.css';

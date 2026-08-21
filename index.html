@@ -13,39 +13,25 @@
     <link rel="preload" as="font" href="fonts/core_sans_n_45_regular.woff2" crossorigin>
     <link rel="preload" as="font" href="fonts/core_sans_n_65_bold.woff2" crossorigin>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/difference.css">
-    <link rel="stylesheet" href="css/price.css">
-    <link rel="stylesheet" href="css/reviews.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="libs/accordion.min.css"> -->
-    <link rel="stylesheet" href="css/questions.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script defer src="js/header-btn-active.js"></script>
-    <script defer src="js/swiper.js"></script>
+
     <script defer src="js/modal.js"></script>
     <script defer src="libs/maps.js"></script>
     <script defer src="libs/maps-init.js"></script>
-
-
-
-
 </head>
 
-<body>
+<body class="body">
     <div class="responsive-overlay"></div>
     <header class="header">
         <div class="header__container">
-            <a href="https://www.ugmk-clinic.ru/" class="header__logo">
+            <a href="https://www.ugmk-clinic.ru/" class="header__logo link-reset">
                 <svg class="header__logo-small" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
                     height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserve-aspect-ratio="xMidYMid meet">
 
@@ -209,10 +195,16 @@
                 <nav class="nav">
                     <ul class="nav__list list-reset">
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">Описание</a>
+                            <a href="#about" class="nav__link link-reset">Описание</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#price" class="nav__link">Услуги и цены</a>
+                            <a href="#diagnostic" class="nav__link link-reset">Диагностика</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#therapy" class="nav__link link-reset">Лечение</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#price" class="nav__link link-reset">Услуги <span class="dn">и цены</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -238,7 +230,7 @@
                         </defs>
                     </svg>
                     +7 343 363-32-43</a>
-                <button class="btn-reset button header__btn">
+                <button class="btn-reset button  header__btn">
                     Записаться
                 </button>
             </div>
@@ -247,13 +239,13 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">
+                <h1 class="hero__title margin-reset">
                     Центр тибетской медицины
                 </h1>
-                <p class="hero__text">
+                <p class="hero__text margin-reset">
                     Традиционные тибетские практики и высочайший сервис
                 </p>
-                <button class="btn-reset hero__btn">
+                <button class="btn-reset button hero__btn">
                     Записаться на консультацию
                 </button>
             </div>
@@ -286,26 +278,39 @@
         <section class="difference">
             <div class="container">
                 <h2 class="title">
-                    Что отличает тибетский подход в&nbsp;медицине от&nbsp;западного?
+                    На&nbsp;чём основана тибетская медицина: главные принципы и&nbsp;отличие от&nbsp;европейской
                 </h2>
                 <div class="difference__block">
                     <p class="difference__text">
-                        Организм человека в Тибете воспринимается как открытая система, находящаяся в тесной связи с
-                        окружающим миром. Установление гармоничных отношений с этой средой и является главным критерием
-                        физического и душевного здоровья.
+                        Тибетская медицина смотрит на&nbsp;организм человека как на&nbsp;единое целое. И&nbsp;лечит
+                        не&nbsp;саму болезнь, а&nbsp;с&nbsp;помощью своих уникальных методик налаживает работу
+                        внутренних органов, улучшает циркуляцию&nbsp;Ци и&nbsp;крови, баланс энергий Инь и&nbsp;Ян,
+                        за&nbsp;счёт чего происходит усиление собственных защитных сил организма, способность
+                        к&nbsp;сопротивлению болезням и&nbsp;самовосстановлению, происходит общее оздоровление
+                        организма. В&nbsp;отличие от&nbsp;европейской медицины, где акцент делается на&nbsp;лечение
+                        самой болезни.
                     </p>
 
                     <p class="difference__text">
-                        Поэтому тибетских практиках учитывается не&nbsp;только состояние человека, но&nbsp;также
-                        особенности его питания и&nbsp;образа жизни, место проживания, климат, сезон.
+                        Традиционная тибетская медицина помогает также в&nbsp;профилактике заболеваний, уменьшает
+                        проявление хронических болезней и&nbsp;улучшает качество жизни человека.
                     </p>
+
+                    <div class="difference__text">
+                        <strong>Основные практики тибетской медицины в&nbsp;нашем центре</strong>
+
+                        <ul class="difference__text difference__list">
+                            Мы&nbsp;применяем традиционные методы, такие как:
+                            <li class="difference__item">ручной точечный массаж;</li>
+                            <li class="difference__item">массаж гуаша (скребковый массаж);</li>
+                            <li class="difference__item">баночная терапия;</li>
+                            <li class="difference__item">лечение фитосборами.</li>
+                        </ul>
+                    </div>
                     <p class="difference__text">
-                        В&nbsp;Центре Тибетской медицины собрана команда высококвалифицированных специалистов, каждый
-                        из&nbsp;которых имеет многолетний опыт работы.
-                    </p>
-                    <p class="difference__text">
-                        Мы&nbsp;предлагаем вам сбалансированный пакет услуг по&nbsp;поддержанию здоровья и&nbsp;красоты,
-                        основанный на&nbsp;комплексе программ и&nbsp;уникальных практик, многовековом опыте Востока.
+                        Данные методы подходят абсолютно всем и&nbsp;применяются практически при любых заболеваниях:
+                        сердечно-сосудистых, гинекологических, при бесплодии, дисменорее, болевом синдроме
+                        и&nbsp;других.
                     </p>
                 </div>
                 <div class="difference__grid">
@@ -355,53 +360,426 @@
             </div>
             <div class="bg"></div>
         </section>
+        <section class="diagnostic" id="diagnostic">
+            <div class="container">
+                <h2 class="title">
+                    Диагностика в Центре тибетской медицины
+                </h2>
+
+                <p class="diagnostic__descr margin-reset">
+                    Что расскажут о&nbsp;вашем здоровье тибетскому доктору глаза, форма ногтей и&nbsp;биение пульса?
+                    За&nbsp;каждым диагностическим методом стоят века медицинского опыта и&nbsp;знаний.
+                </p>
+
+                <div class="diagnostic__flex">
+                    <div class="diagnostic__img img-1">
+                    </div>
+                    <p class="diagnostic__text margin-reset">
+                        За&nbsp;свою многолетнюю историю тибетская медицина выработала совершенную систему выявления
+                        болезней. Чтобы овладеть методами нетрадиционной диагностики, мало обучаться несколько лет
+                        в&nbsp;институте, мало выучить карту всех биологически активных точек на&nbsp;теле
+                        человека&nbsp;&mdash; нужно познавать эту науку всю жизнь. Сегодня специалисты такого уровня
+                        заслужили признание во&nbsp;всём мире даже среди докторов классической западной медицины.
+                        В&nbsp;&laquo;УГМК-Здоровье&raquo; работают доктора, практикующие уникальные диагностические
+                        методики Китая и&nbsp;Тибета. Когда врач со&nbsp;стопроцентным попаданием в&nbsp;цель
+                        рассказывает о&nbsp;состоянии вашего организма, даже самый убеждённый скептик осознаёт, что
+                        тибетские специалисты действительно владеют особыми знаниями, которым можно доверять.
+                    </p>
+                </div>
+                <p class="diagnostic__descr margin-reset">
+                    В&nbsp;тибетской диагностике мелочей не&nbsp;бывает.
+                </p>
+                <div class="diagnostic__flex">
+                    <div class="diagnostic__img img-2">
+                    </div>
+                    <p class="diagnostic__text margin-reset">
+                        На&nbsp;консультацию не&nbsp;полагается приходить голодным, и&nbsp;будьте готовы к&nbsp;тому,
+                        что диагноста могут интересовать самые неожиданные вещи&nbsp;&mdash; вплоть до&nbsp;того,
+                        в&nbsp;котором часу вы&nbsp;привыкли ложиться спать. Авторские методы исследования организма,
+                        применяемые в&nbsp;&laquo;УГМК-Здоровье&raquo;, включают мануальный осмотр, диагностику
+                        по&nbsp;ногтям, радужной оболочке глаз, по&nbsp;языку и&nbsp;пульсу.
+                    </p>
+                </div>
+
+                <h3 class="diagnostic__title">
+                    Этапы обследования
+                </h3>
+
+                <div class="diagnostic__steps">
+                    <div class="diagnostic__item">
+                        <h4 class="diagnostic__name margin-reset">
+                            Беседа
+                        </h4>
+                        <p class="margin-reset diagnostic__content">
+                            Помимо обычных вопросов о&nbsp;самочувствии, жалобах, истории болезни, тибетский специалист
+                            обязательно поинтересуется вашим душевным состоянием, привычками и&nbsp;особенностями образа
+                            жизни. В&nbsp;восточной практике организм, воспринимаемый как открытая система,
+                            рассматривается обязательно во&nbsp;взаимодействии с&nbsp;окружающей средой.
+                        </p>
+                    </div>
+                    <div class="diagnostic__item">
+                        <h4 class="diagnostic__name margin-reset">
+                            Пульсовая диагностика
+                        </h4>
+                        <p class="margin-reset diagnostic__content">
+                            В&nbsp;европейской медицине частота и&nbsp;ритмичность пульса являются важным
+                            диагностическим критерием. Однако для тибетского специалиста пульс&nbsp;&mdash; гораздо
+                            более глубокий источник информации. В&nbsp;тибетской и&nbsp;китайской медицине выявляют
+                            более двадцати восьми видов пульса, по&nbsp;которым оценивается состояние здоровья. Каждое
+                            из&nbsp;отклонений может свидетельствовать о&nbsp;той или иной проблеме в&nbsp;организме.
+                        </p>
+                    </div>
+                    <div class="diagnostic__item">
+                        <h4 class="diagnostic__name margin-reset">
+                            Осмотр
+                        </h4>
+                        <p class="margin-reset diagnostic__content">
+                            Этот диагностический метод позволяет получить данные о&nbsp;клинической картине болезни
+                            на&nbsp;основе визуального изучения цвета лица, строения тела, манеры поведения пациента,
+                            а&nbsp;также видимых изменений в&nbsp;частях тела. Характеристики ногтей, языка, губ, век,
+                            радужной оболочки глаз, кожи, волос и&nbsp;так далее расскажут доктору о&nbsp;проблемах тех
+                            или иных внутренних органов и&nbsp;систем.
+                        </p>
+                    </div>
+                    <div class="diagnostic__item">
+                        <h4 class="diagnostic__name margin-reset">
+                            Прослушивание
+                        </h4>
+                        <p class="margin-reset diagnostic__content">
+                            На&nbsp;этом важном этапе диагностических манипуляций врач прослушивает звуки, издаваемые
+                            пациентом (его речь, кашель, дыхание). Всё это является для врача дополнительным источником
+                            информации.
+                        </p>
+                    </div>
+                </div>
+                <p class="diagnostic__descr margin-reset">
+                    По&nbsp;итогам диагностики для каждого пациента составляется индивидуальная программа лечения,
+                    которая включает в&nbsp;себя процедуры и&nbsp;приём лекарственных тибетских трав.
+                </p>
+
+            </div>
+        </section>
+        <section class="therapy" id="therapy">
+            <div class="container">
+                <h2 class="title">
+                    Лечение в Центре тибетской медицины
+                </h2>
+
+                <blockquote class="citate">
+                    "Лекарь, не знающий методов лечения, похож на стреляющего по мишени в темноте. Его средства не
+                    попадут в болезнь…"</blockquote>
+                <cite class="autor">&mdash;&nbsp;Средневековый трактат &laquo;Чжуд-ши&raquo;</cite>
+                <p class="therapy__descr margin-reset">
+                    Пациенты, которые привыкли бороться за&nbsp;своё здоровье с&nbsp;помощью лекарств
+                    и&nbsp;воспринимают тибетскую медицину как нетрадиционную и&nbsp;экзотичную, выздоравливая, называют
+                    результат работы тибетских врачей не&nbsp;иначе как волшебное исцеление. На&nbsp;самом деле лечебные
+                    процедуры и&nbsp;уникальные рецепты лекарственных сборов, эффективных и&nbsp;безопасных, выработаны
+                    и&nbsp;доведены до&nbsp;совершенства столетиями врачебной практики.
+                </p>
+
+                <p class="therapy__descr margin-reset">
+                    Врачи Центра применяют для оздоровления различные типы лечебного и&nbsp;профилактического массажа,
+                    акупунктурные методики, гимнастику, техники дыхания, ароматерапию, ванны на&nbsp;тибетских травах.
+                    Эти процедуры подчас оказываются щадящей, но&nbsp;не&nbsp;менее эффективной альтернативой методам
+                    европейской медицины и&nbsp;могут назначаться как взрослым, так и&nbsp;детям.
+                </p>
+
+                <p class="therapy__descr margin-reset">
+                    Кроме лечения, каждый пациент Центра тибетской медицины &laquo;УГМК-Здоровье&raquo; получает ценные
+                    рекомендации по&nbsp;питанию и&nbsp;образу жизни, которые, как и&nbsp;курс лечения, разрабатываются
+                    индивидуально.
+                </p>
+            </div>
+        </section>
+        <section class="recommendations">
+            <div class="container">
+                <h2 class="title">
+                    Рекомендации
+                </h2>
+
+                <div class="recommendations-block">
+                    <div class="recommendations__pagination-container">
+                        <button class="btn-reset button swiper-button-prev recommendations-prev"
+                            aria-label="Перейти к предыдущему слайду"></button>
+                        <div class="swiper-pagination"> </div>
+                        <button class="btn-reset button swiper-button-next recommendations-next"
+                            aria-label="Перейти к следующему слайду"></button>
+                    </div>
+                    <div class="swiper swiper-recommendations">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recommendations__flex">
+                                    <div class="recommendations__left">
+                                        <blockquote class="recommendations__citate">
+                                            <p class="recommendations__text">
+                                                "Практики, направленные на&nbsp;расслабление и&nbsp;снятие нервного
+                                                напряжения:
+                                                медитации, цигун, йога, физические упражнения. Движение очень важно
+                                                для
+                                                нашего
+                                                здоровья и&nbsp;хорошего настроения: во&nbsp;время движения человек
+                                                снимает
+                                                нервное
+                                                напряжение, поэтому важно найти свой способ"
+                                            </p>
+                                            <footer class="recommendations__autor">— Чэнь Ган</footer>
+                                        </blockquote>
+
+
+                                        <blockquote class="recommendations__citate">
+                                            <p class="recommendations__text">
+                                                "30&nbsp;минут в&nbsp;день&nbsp;&mdash; физические упражнения (любые,
+                                                которые нравятся). 1&nbsp;раз в&nbsp;неделю можно делать
+                                                профилактический массаж. Ежедневно делать горячие ванночки для стоп"
+                                            </p>
+                                            <footer class="recommendations__autor">— Чжун Гоцинь</footer>
+                                        </blockquote>
+
+                                    </div>
+                                    <div class="recommendations__picture img-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommendations__flex">
+
+                                    <div class="recommendations__left">
+                                        <blockquote class="recommendations__citate">
+                                            <p class="recommendations__text">
+                                                "В&nbsp;нашей повседневной жизни важно жить в&nbsp;соответствии
+                                                с&nbsp;естественными
+                                                ритмами природы. Вовремя ложиться спать в&nbsp;тёмное время суток
+                                                (до&nbsp;11&nbsp;часов вечера), вовремя вставать в&nbsp;светлое время
+                                                суток.
+                                                Спать
+                                                по&nbsp;семь-восемь часов"
+                                            </p>
+                                            <footer class="recommendations__autor">— Чэнь Ган</footer>
+                                        </blockquote>
+
+
+                                        <blockquote class="recommendations__citate">
+                                            <p class="recommendations__text">
+                                                "Cоблюдать режим дня: ложиться спать вовремя, не&nbsp;поздно, вставать
+                                                рано"
+                                            </p>
+                                            <footer class="recommendations__autor">— Чжун Гоцинь</footer>
+                                        </blockquote>
+
+                                    </div>
+
+                                    <div class="recommendations__picture img-2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommendations__flex">
+                                    <div class="recommendations__left">
+                                        <blockquote class="recommendations__citate">
+                                            <p class="recommendations__text">
+                                                "Вовремя принимать пищу, стараться придерживаться здорового питания:
+                                                в&nbsp;рационе
+                                                должны присутствовать и&nbsp;мясо, и&nbsp;овощи. Не&nbsp;переедать
+                                                "
+                                            </p>
+                                            <footer class="recommendations__autor">— Чэнь Ган</footer>
+                                        </blockquote>
+
+
+                                        <blockquote class="recommendations__citate">
+                                            <p class="recommendations__text">
+                                                "Обязательно принимать пищу три раза в&nbsp;день: завтрак, обед
+                                                и&nbsp;ужин (завтрак должен быть здоровым и&nbsp;сытным,
+                                                обед&nbsp;&mdash; тоже сытным, а&nbsp;ужин&nbsp;&mdash; лёгким: тушёные
+                                                овощи, фрукты). Важно не&nbsp;переедать"
+                                            </p>
+                                            <footer class="recommendations__autor">— Чжун Гоцинь</footer>
+                                        </blockquote>
+
+                                    </div>
+
+                                    <div class="recommendations__picture img-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommendations__flex">
+                                    <div class="recommendations__left">
+
+                                        <blockquote class="recommendations__citate">
+                                            <p class="recommendations__text">
+                                                "Очень важно поддержание хорошего настроения (особенно для женщин):
+                                                важно прощать и&nbsp;отпускать плохое, стараться всегда быть
+                                                в&nbsp;хорошем настроении"
+                                            </p>
+                                            <footer class="recommendations__autor">— Чжун Гоцинь</footer>
+                                        </blockquote>
+
+                                    </div>
+
+                                    <div class="recommendations__picture img-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+        <section class="specialists">
+            <div class="container">
+                <h2 class="title">
+                    Специалисты Центра тибетской медицины &laquo;УГМК-Здоровье&raquo;
+                </h2>
+                <p class="specialists__description margin-reset">
+                    В&nbsp;Центре тибетской медицины &laquo;УГМК-Здоровье&raquo; работают врачи, которые переняли знания
+                    у&nbsp;наставников из&nbsp;Тибета и&nbsp;Китая. Их&nbsp;опыт&nbsp;&mdash; это годы обучения
+                    в&nbsp;традиционных школах, где знания передаются из&nbsp;поколения в&nbsp;поколение.
+                </p>
+                <p class="specialists__description margin-reset">
+                    Наши специалисты:
+                </p>
+                <ul class="specialists__text-list">
+                    <li class="specialists__text-item">
+                        владеют методами пульсовой и&nbsp;языковой диагностики
+                    </li>
+                    <li class="specialists__text-item">
+                        используют тысячелетние рецептуры и&nbsp;современные формы их&nbsp;применения
+                    </li>
+                    <li class="specialists__text-item">
+                        видят организм как единую систему, а&nbsp;не&nbsp;как набор органов
+                    </li>
+                </ul>
+                <div class="specialists__team">
+                    <div class="specialists__item open-modal" data-path="specialists-1">
+                        <div class="specialists__left">
+                            <h3 class="specialists__name">
+                                Чэнь Ган (陈钢)
+                            </h3>
+                            <p class="specialists__experience">
+                                Стаж: 20 лет
+                            </p>
+                            <p class="specialists__specialization">
+                                Специализация: диагностика по пульсу, языку; лечение фитосборами, иглорефлексотерапия
+                            </p>
+                        </div>
+                        <div class="specialists__right specialists-1"></div>
+                    </div>
+                    <div class="specialists__item open-modal" data-path="specialists-2">
+                        <div class="specialists__left">
+                            <h3 class="specialists__name">
+                                Чжун Гоцинь (钟国琴)
+                            </h3>
+                            <p class="specialists__experience">
+                                Стаж: 15 лет
+                            </p>
+                            <p class="specialists__specialization">
+                                Специализация: оздоровительный массаж, иглорефлексотерапия при лечении
+                                опорно-двигательного аппарата, лечение остеохондроза, межпозвоночных грыж, болей
+                                в&nbsp;шее и&nbsp;пояснице, головных болей, восстановление подвижности суставов,
+                                проблемы по&nbsp;гинекологии
+                            </p>
+                        </div>
+                        <div class="specialists__right specialists-2"></div>
+                    </div>
+                    <div class="specialists__item open-modal" data-path="specialists-3">
+                        <div class="specialists__left">
+                            <h3 class="specialists__name">
+                                Тянь Бо (田波)
+                            </h3>
+                            <p class="specialists__experience">
+                                Стаж: 15 лет
+                            </p>
+                            <p class="specialists__specialization">
+                                Специализация: оздоровительный массаж, иглорефлексотерапия при лечении
+                                опорно-двигательного аппарата, лечение остеохондроза, межпозвоночных грыж, болей
+                                в&nbsp;шее и&nbsp;пояснице, лечение урологических проблем, проблем малого таза
+                            </p>
+                        </div>
+                        <div class="specialists__right specialists-3"></div>
+                    </div>
+                    <div class="specialists__item open-modal" data-path="specialists-4">
+                        <div class="specialists__left">
+                            <h3 class="specialists__name">
+                                Гун Чжисин (龚智兴)
+                            </h3>
+                            <p class="specialists__experience">
+                                Стаж: 6 лет
+                            </p>
+                            <p class="specialists__specialization">
+                                Специализация: владеет всеми основными методиками китайской традиционной медицины:
+                                массаж мануальный туйна, скребковый массаж гуаша, баночная терапия, иглорефлексотерапия
+                            </p>
+                        </div>
+                        <div class="specialists__right specialists-4"></div>
+                    </div>
+                    <div class="specialists__item open-modal" data-path="specialists-5">
+                        <div class="specialists__left">
+                            <h3 class="specialists__name">
+                                Лэн Цинчен (冷青澄)
+                            </h3>
+                            <p class="specialists__experience">
+                                Стаж: более 10 лет
+                            </p>
+                            <p class="specialists__specialization">
+                                Специализация: владеет всеми основными методиками китайской традиционной медицины:
+                                массаж мануальный туйна, скребковый массаж гуаша, баночная терапия, иглорефлексотерапия.
+                                Сочетает методы китайской медицины и&nbsp;современной реабилитации
+                            </p>
+                        </div>
+                        <div class="specialists__right specialists-5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="price" id="price">
             <div class="container">
                 <h2 class="title">
                     Консультации специалистов:
                 </h2>
                 <div class="price__block block-1">
-                    <div class="price__parent price__modal price-1" data-path="five">
-                        <img src="img/consultation1.webp" alt="Изображение консультации" class="price__img">
+                    <div class="price__parent open-modal price-1" data-path="five">
+                        <img src="img/consultation1.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
+                            <p class="price__name margin-reset">
                                 Консультация специалиста-диагноста высшей категории первичная
                             </p>
-                            <p class="price__price">
-                                4900₽
+                            <p class="price__price margin-reset">
+                                5 400 ₽ (40 минут)
                             </p>
                         </div>
                     </div>
                     <div class="price__parent price-2">
-                        <img src="img/consultation2.webp" alt="Изображение консультации" class="price__img">
+                        <img src="img/consultation2.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
+                            <p class="price__name margin-reset">
                                 Консультация специалиста-диагноста высшей категории повторная
                             </p>
-                            <p class="price__price">
-                                2 600₽
+                            <p class="price__price margin-reset">
+                                2 880 ₽ (30 минут)
                             </p>
                         </div>
                     </div>
-                    <div class="price__parent price__modal price-3" data-path="five">
-                        <img src="img/consultation3.webp" alt="Изображение консультации" class="price__img">
+                    <div class="price__parent open-modal price-3" data-path="five">
+                        <img src="img/consultation3.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
-                                Консультация специалиста-диагноста Чен Гана первичная
+                            <p class="price__name margin-reset">
+                                Консультация специалиста-диагноста Чэнь Гана первичная
                             </p>
-                            <p class="price__price">
-                                2 900₽
+                            <p class="price__price margin-reset">
+                                3 600 ₽ (40 минут)
                             </p>
                         </div>
                     </div>
                     <div class="price__parent price-4">
-                        <img src="img/consultation4.webp" alt="Изображение консультации" class="price__img">
+                        <img src="img/consultation4.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
-                                Консультация специалиста-диагноста Чен Гана повторная
+                            <p class="price__name margin-reset">
+                                Консультация специалиста-диагноста Чэнь Гана повторная
                             </p>
-                            <p class="price__price">
-                                1 500₽
+                            <p class="price__price margin-reset">
+                                2 000 ₽ (30 минут)
                             </p>
                         </div>
                     </div>
@@ -411,144 +789,136 @@
                     Традиционные тибетские практики:
                 </h2>
                 <div class="price__block block-2">
-                    <div class="price__parent price__modal price-5" data-path="one">
-                        <img src="img/practik1.webp" alt="Изображение консультации" class="price__img">
+                    <div class="price__parent open-modal price-5" data-path="one">
+                        <img src="img/practik1.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
-                                Традиционная тибетская практика для тела
-                            </p>
-                            <p class="price__price">
-                                4 500₽
-                            </p>
+                            <div class="price__header">
+                                <p class="price__name margin-reset">
+                                    Традиционная тибетская практика для тела
+                                </p>
+                                <p class="price__price margin-reset">4 950 ₽ (60 минут)</p>
+                            </div>
+                            <!-- <div class="price__flex">
+                                <div class="price__left">
+                                    <p class="price__desr margin-reset">Курс (10 сеансов)</p>
+                                    <p class="price__cours margin-reset">44 500 ₽</p>
+                                </div>
+                                <div class="price__right">
+                                    <p class="price__desr margin-reset">Курс (5 сеансов)</p>
+                                    <p class="price__cours margin-reset">23 750 ₽</p>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="price__parent price__modal price-6" data-path="tree">
-                        <img src="img/practik2.webp" alt="Изображение консультации" class="price__img">
+                    <div class="price__parent open-modal price-6" data-path="tree">
+                        <img src="img/practik2.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
-                                Традиционная тибетская практика для головы и шеи
-                            </p>
-                            <p class="price__price">
-                                3 000₽
-                            </p>
+                            <div class="price__header">
+                                <p class="price__name margin-reset">
+                                    Традиционная тибетская практика для головы и шеи
+                                </p>
+                                <p class="price__price margin-reset">3 300 ₽ (60 минут)</p>
+                            </div>
+                            <!-- <div class="price__flex">
+                                <div class="price__left">
+                                    <p class="price__desr margin-reset">Курс (10 сеансов)</p>
+                                    <p class="price__cours margin-reset">28 000 ₽</p>
+                                </div>
+                                <div class="price__right">
+                                    <p class="price__desr margin-reset">Курс (5 сеансов)</p>
+                                    <p class="price__cours margin-reset">15 500 ₽</p>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="price__parent price__modal price-7" data-path="four">
-                        <img src="img/practik3.webp" alt="Изображение консультации" class="price__img">
+                    <div class="price__parent open-modal price-7" data-path="four">
+                        <img src="img/practik3.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
-                                Традиционная тибетская практика для детей
-                            </p>
-                            <p class="price__price">
-                                3 000₽
-                            </p>
+                            <div class="price__header">
+                                <p class="price__name margin-reset">
+                                    Традиционная тибетская практика для детей
+                                </p>
+                                <p class="price__price margin-reset">3 300 ₽ (60 минут)</p>
+                            </div>
+                            <!-- <div class="price__flex">
+                                <div class="price__left">
+                                    <p class="price__desr margin-reset">Курс (10 сеансов)</p>
+                                    <p class="price__cours margin-reset">28 000 ₽</p>
+                                </div>
+                                <div class="price__right">
+                                    <p class="price__desr margin-reset">Курс (5 сеансов)</p>
+                                    <p class="price__cours margin-reset">15 500 ₽</p>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="price__parent price__modal price-8" data-path="two">
-                        <img src="img/practik4.webp" alt="Изображение консультации" class="price__img">
+                    <div class="price__parent open-modal price-8" data-path="two">
+                        <img src="img/practik4.webp" alt="Изображение консультации" class="price__img img">
                         <div class="price__block-price">
-                            <p class="price__name">
-                                Традиционная тибетская практика для стоп
-                            </p>
-                            <p class="price__price">
-                                2 600₽
-                            </p>
+                            <div class="price__header">
+                                <p class="price__name margin-reset">
+                                    Традиционная тибетская практика для стоп
+                                </p>
+                                <p class="price__price margin-reset"> 3 400 ₽ (60 минут)</p>
+                            </div>
+                            <!-- <div class="price__flex">
+                                <div class="price__left">
+                                    <p class="price__desr margin-reset">Курс (10 сеансов)</p>
+                                    <p class="price__cours margin-reset">29 000 ₽</p>
+                                </div>
+                                <div class="price__right">
+                                    <p class="price__desr margin-reset">Курс (5 сеансов)</p>
+                                    <p class="price__cours margin-reset">16 000 ₽</p>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-                <p class="price__descr">
-                    *Тибетские оздоравливающие практики имеют целью поддержание здоровья и&nbsp;красоты
-                    и&nbsp;не&nbsp;заменяют лечения, назначенного традиционными лечащими врачами
-                </p>
-
-                <div class="modals">
-                    <div class="modal-overlay">
-                        <div class="modal" data-target="one">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
-                            </button>
-                            <p class="modal-overlay__text">
-                                Возвращает жизненные силы, дарит легкость и гибкость.
-                            </p>
-                            <p class="modal-overlay__text">
-                                Это интенсивное воздействие на напряженные участки вашего тела. Помогает снять это
-                                физическое напряжение и способствует сбалансированному эмоциональному состоянию.
-                            </p>
-                            <a href="pages/tradicionnaya-tibetskaya-praktika-dlya-tela.html" class="modal__more">
-                                Узнать подробнее
-                            </a>
+                <h2 class="title">
+                    Программы оздоровительной перезагрузки:
+                </h2>
+                <div class="price__block block-3">
+                    <div class="price__parent open-modal price-9" data-path="detox">
+                        <img src="img/detox.webp" alt="Изображение консультации" class="price__img img">
+                        <div class="price__block-price">
+                            <div class="price__header">
+                                <p class="price__name margin-reset">
+                                    Очищение по-тибетски
+                                </p>
+                            </div>
+                            <div class="price__flex">
+                                <div class="price__left">
+                                    <p class="price__desr margin-reset">Интенсивный трёхдневный курс оздоровления,
+                                        быстрый заметный результат</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="modal" data-target="two">
-                            <button class="btn-reset modal__btn-close"><img src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
-                            </button>
-                            <p class="modal-overlay__text">
-                                Процедура придает тонус и ощущение легкости, снимает усталость, восстанавливает нервную
-                                систему, оказывает благотворное действие на весь организм, поднимает настроение.
-                            </p>
-                            <a href="pages/tradicionnaya-tibetskaya-praktika-dlya-stop.html" class="modal__more">
-                                Узнать подробнее
-                            </a>
-                        </div>
-
-
-                        <div class="modal" data-target="tree">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
-                            </button>
-                            <p class="modal-overlay__text">
-                                Специальная практика для головы и шеи. Эффективна при болях в шейном отделе
-                                позвоночника. Повышает мозговую активность, улучшает зрение, снимает нервную нагрузку,
-                                укрепляет сон.
-                            </p>
-                        </div>
-
-
-
-                        <div class="modal" data-target="four">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
-                            </button>
-                            <p class="modal-overlay__text">
-                                <strong>Традиционная тибетская практика для детей</strong> – это ручной массаж для детей
-                                без ограничения по возврату. Практика обеспечивает общее воздействие на организм, так
-                                как в ходе сеанса мастер прорабатывает все тело: от головы до пальцев ног.
-                            </p>
-                            <a href="pages/tradicionnaya-tibetskaya-praktika-dlya-detei.html" class="modal__more">
-                                Узнать подробнее
-                            </a>
-                        </div>
-
-
-
-                        <div class="modal" data-target="five">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
-                            </button>
-                            <p class="modal-overlay__text">
-                                Консультация включает в себя четыре главных аспекта:
-                            </p>
-                            <ul class="list-reset modal__list">
-                                <li class="modal__item">
-                                    Расспрос
-                                </li>
-                                <li class="modal__item">
-                                    Пульсовая диагностика
-                                </li>
-                                <li class="modal__item">
-                                    Осмотр
-                                </li>
-                                <li class="modal__item">
-                                    Прослушивание
-                                </li>
-                            </ul>
-                            <a href="pages/consultation.html" class="modal__more">
-                                Узнать подробнее
-                            </a>
+                    </div>
+                    <div class="price__parent open-modal price-10" data-path="cigun">
+                        <img src="img/cigun.webp" alt="Изображение консультации" class="price__img img">
+                        <div class="price__block-price">
+                            <div class="price__header">
+                                <p class="price__name margin-reset">
+                                    Цигун
+                                </p>
+                            </div>
+                            <div class="price__flex">
+                                <div class="price__left">
+                                    <p class="price__desr margin-reset">Гимнастика, соединяющая
+                                        медитацию, дыхание и медленные физические движения</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <p class="price__descr">
+                *Тибетские оздоравливающие практики имеют целью поддержание здоровья и&nbsp;красоты
+                и&nbsp;не&nbsp;заменяют лечения, назначенного традиционными лечащими врачами
+            </p>
+
+
             </div>
             <div class="bg"></div>
         </section>
@@ -850,66 +1220,109 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <button class="btn-reset swiper-button-prev swiper-prev" aria-label="К предыдущему слайду"></button>
-                <button class="btn-reset swiper-button-next swiper-next" aria-label="К следующему слайду"></button>
+                <button class="btn-reset button swiper-button-prev swiper-prev"
+                    aria-label="К предыдущему слайду"></button>
+                <button class="btn-reset button swiper-button-next swiper-next"
+                    aria-label="К следующему слайду"></button>
 
             </div>
         </section>
         <section class="contacts">
             <div class="container contacts-container">
-                <div class="contacts-info">
-                    <h2 class="title">
-                        Как добраться
-                    </h2>
-                    <div class="contacts__block">
-                        <div class="contacts__address">
-                            <h4>
-                                Наш адрес
-                            </h4>
-                            <p>
-                                ул. Бориса Ельцина, 6, Башня Исеть, 22&nbsp;этаж
-                            </p>
+                <div class="contacts__flex">
+                    <div class="contacts-info">
+                        <h2 class="title">
+                            Как добраться
+                        </h2>
+                        <div class="contacts__block">
+                            <div class="contacts__address">
+                                <h4 class="margin-reset">
+                                    Наш адрес
+                                </h4>
+                                <p class="margin-reset">
+                                    ул. Бориса Ельцина, 6, Башня Исеть, 22&nbsp;этаж
+                                </p>
+                            </div>
+                            <div class="contacts__info">
+                                <h4 class="margin-reset">
+                                    Единая справочная <span>с 8:00 до 20:00</span>
+                                </h4>
+                                <a href="tel:8800234‒10‒03" class="contacts__tel link-reset">
+                                    8&nbsp;800 234-10-03
+                                </a>
+                                <span>|</span>
+                                <a href="tel:8343363‒32‒43" class="contacts__tel link-reset">
+                                    +7&nbsp;343 363-32-43
+                                </a>
+                            </div>
+                            <div class="contacts__info">
+                                <h4 class="margin-reset">
+                                    Корпоративный номер<span>(доступен в соответствии
+                                        с&nbsp;графиком&nbsp;работы)</span>
+                                </h4>
+                                <a href="tel:8982686‒09‒73" class="contacts__tel link-reset">
+                                    +7&nbsp;982 686-09-73
+                                </a>
+                            </div>
+                            <div class="contacts__info">
+                                <h4 class="margin-reset">
+                                    Яндекс-такси
+                                </h4>
+                                <a href="tel:8343266‒66‒66" class="contacts__tel link-reset">
+                                    +7&nbsp;(343) 266-66-66
+                                </a>
+                            </div>
+                            <div class="contacts__info">
+                                <h4 class="margin-reset">
+                                    Остановка трамвая
+                                </h4>
+                                <p class="margin-reset">
+                                    &laquo;ул. Бориса Ельцина&raquo;
+                                </p>
+                            </div>
+                            <div class="contacts__info bus-station">
+                                <h4 class="margin-reset">
+                                    Остановка автобуса
+                                </h4>
+                                <p class="margin-reset">
+                                    &laquo;Площадь 1905 г.&raquo;
+                                </p>
+                            </div>
                         </div>
-                        <div class="contacts__info">
-                            <h4>
-                                Единая справочная <span>с 8:00 до 20:00</span>
-                            </h4>
-                            <a href="tel:8800234‒10‒03" class="contacts__tel">
-                                8&nbsp;800 234-10-03
-                            </a>
-                            <span>|</span>
-                            <a href="tel:8343363‒32‒43" class="contacts__tel ">
-                                +7&nbsp;343 363-32-43
-                            </a>
+                        <a href="mailto:info@ugmk-clinic.ru" class="contacts__mail link-reset">
+                            Написать нам
+                        </a>
+                    </div>
+                    <div class="contacts__work">
+                        <h2 class="title">
+                            График работы
+                        </h2>
+                        <div class="contacts-info">
+                            <h4 class="margin-reset">
+                                Понедельник, вторник, пятница:</h4>
+                            <p class="margin-reset">9:00 - 18:00</p>
                         </div>
-                        <div class="contacts__info">
-                            <h4>
-                                Яндекс-такси
-                            </h4>
-                            <a href="tel:8343266‒66‒66" class="contacts__tel">
-                                +7&nbsp;(343) 266-66-66
-                            </a>
+                        <div class="contacts-info">
+                            <h4 class="margin-reset">
+                                Среда:</h4>
+                            <p class="margin-reset">9:00 - 13:00</p>
                         </div>
-                        <div class="contacts__info">
-                            <h4>
-                                Остановка трамвая
-                            </h4>
-                            <p>
-                                &laquo;ул. Бориса Ельцина&raquo;
-                            </p>
+                        <div class="contacts-info">
+                            <h4 class="margin-reset">
+                                Четверг:</h4>
+                            <p class="margin-reset">11:00 - 20:00</p>
                         </div>
-                        <div class="contacts__info bus-station">
-                            <h4>
-                                Остановка автобуса
-                            </h4>
-                            <p>
-                                &laquo;Площадь 1905 г.&raquo;
-                            </p>
+                        <div class="contacts-info">
+                            <h4 class="margin-reset">
+                                Суббота:</h4>
+                            <p class="margin-reset">9:00 - 18:00</p>
+                        </div>
+                        <div class="contacts-info">
+                            <h4 class="margin-reset">
+                                Воскресенье:</h4>
+                            <p class="margin-reset">Выходной день</p>
                         </div>
                     </div>
-                    <a href="mailto:info@ugmk-clinic.ru" class="contacts__mail">
-                        Написать нам
-                    </a>
                 </div>
                 <div class="contacts__map">
                     <div class="map" id="map">
@@ -917,10 +1330,346 @@
                 </div>
             </div>
         </section>
+        <div class="modals">
+            <div class="modal-overlay">
+                <div class="modal" data-target="one">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <p class="modal-overlay__text">
+                        Курсовые процедуры общего массажа тела оказывают общеоздоравливающее действие на&nbsp;организм.
+                        Процедуры уникальны для профилактики и&nbsp;лечения вирусных заболеваний. Снимают напряжение
+                        и&nbsp;усталость&nbsp;и, конечно, помогают при остеохондрозе, болях в&nbsp;суставах
+                        и&nbsp;других проблемах опорно-двигательного аппарата.
+                    </p>
+                    <p class="modal-overlay__text">
+                        Это интенсивное воздействие на напряженные участки вашего тела. Помогает снять это
+                        физическое напряжение и способствует сбалансированному эмоциональному состоянию.
+                    </p>
+                    <a href="pages/tradicionnaya-tibetskaya-praktika-dlya-tela.html" class="modal__more link-reset">
+                        Узнать подробнее
+                    </a>
+                </div>
+                <div class="modal" data-target="two">
+                    <button class="btn-reset button modal__btn-close"><img src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <p class="modal-overlay__text">
+                        Точечный массаж стоп обладает как профилактическим, так и&nbsp;лечебным действием.
+                        В&nbsp;тибетской медицине стопа представляет собой проекцию всех внутренних органов человека.
+                        Через рефлекторные зоны массаж активирует работу самих органов. Кроме того, эта приятная
+                        процедура способствует повышению иммунитета и&nbsp;борется со&nbsp;стрессом.
+                    </p>
+                    <a href="pages/tradicionnaya-tibetskaya-praktika-dlya-stop.html" class="modal__more link-reset">
+                        Узнать подробнее
+                    </a>
+                </div>
+                <div class="modal" data-target="tree">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <p class="modal-overlay__text">
+                        Применяется при болях в&nbsp;шейном отделе позвоночника. Повышает мозговую активность, улучшает
+                        зрение, снимает нервную нагрузку, укрепляет сон.
+                    </p>
+                </div>
+                <div class="modal" data-target="four">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="scrollbar">
+                        <p class="modal-overlay__text">
+                            Ручной массаж для детей без ограничения по&nbsp;возрасту. Обеспечивает общее воздействие
+                            на&nbsp;организм: в&nbsp;ходе сеанса мастер прорабатывает всё тело&nbsp;&mdash;
+                            от&nbsp;головы
+                            до&nbsp;пальцев ног.
+                        </p>
+                        <p class="modal-overlay__text">
+                            Полезные свойства:
+                        </p>
+                        <ul class="list-reset modal__list">
+                            <li class="modal__item">
+                                повышение иммунной защиты организма;
+                            </li>
+                            <li class="modal__item">
+                                улучшение кровообращения;
+                            </li>
+                            <li class="modal__item">
+                                расслабление мышц;
+                            </li>
+                            <li class="modal__item">
+                                улучшение состояния сухожилий, костных структур, суставов, мышечно-связочного
+                                и&nbsp;опорно-двигательного аппарата;
+                            </li>
+                            <li class="modal__item">
+                                профилактика различных заболеваний.
+                            </li>
+                        </ul>
+                        <p class="modal-overlay__text">
+                            Длительность сеанса: 30&ndash;40&nbsp;минут.
+                        </p>
+                        <p class="modal-overlay__text">
+                            Процедура выполняется после консультации специалиста-диагноста Центра тибетской медицины.
+                        </p>
+                        <a href="pages/tradicionnaya-tibetskaya-praktika-dlya-detei.html"
+                            class="modal__more link-reset">
+                            Узнать подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal" data-target="five">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <p class="modal-overlay__text">
+                        Консультация включает в себя четыре главных аспекта:
+                    </p>
+                    <ul class="list-reset modal__list">
+                        <li class="modal__item">
+                            Расспрос
+                        </li>
+                        <li class="modal__item">
+                            Пульсовая диагностика
+                        </li>
+                        <li class="modal__item">
+                            Осмотр
+                        </li>
+                        <li class="modal__item">
+                            Прослушивание
+                        </li>
+                    </ul>
+                    <a href="pages/consultation.html" class="modal__more link-reset">
+                        Узнать подробнее
+                    </a>
+                </div>
+                <div class="modal" data-target="detox">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="scrollbar">
+                        <p class="modal-overlay__text">
+                            Программа детоксикации в&nbsp;Центре тибетской медицины
+                            &laquo;УГМК-Здоровье&raquo;&nbsp;&mdash; это не&nbsp;расслабляющее SPA-приключение,
+                            а&nbsp;интенсивный трёхдневный курс оздоровления и&nbsp;быстрый заметный результат.
+                        </p>
+                        <p class="modal-overlay__text">
+                            Назначается программа самим Даньчжу Ламой по&nbsp;результатам диагностики. Программа
+                            включает пребывание в&nbsp;комфортабельном стационаре клиники &laquo;УГМК-Здоровье&raquo;
+                            под наблюдением тибетских специалистов. Курс очищения проводится на&nbsp;фоне голодания
+                            по&nbsp;методикам тибетских монахов. И&nbsp;к&nbsp;этому необходимо быть готовым.
+                        </p>
+
+                        <a href="pages/detox.html" class="modal__more link-reset">
+                            Узнать подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal" data-target="cigun">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="scrollbar">
+                        <p class="modal-overlay__text">
+                            Цигун&nbsp;&mdash; китайская оздоровительная практика, соединяющая медитацию, дыхание
+                            и&nbsp;медленные физические движения. Подходит для любого возраста и&nbsp;уровня подготовки.
+                        </p>
+                        <p class="modal-overlay__text">
+                            Основные цели цигун:
+                        </p>
+                        <ul class="list-reset modal__list">
+                            <li class="modal__item">
+                                достижение и&nbsp;сохранение хорошего физического самочувствия;
+                            </li>
+                            <li class="modal__item">
+                                избавление от&nbsp;беспокойных мыслей;
+                            </li>
+                            <li class="modal__item">
+                                равномерное распределение энергии (&laquo;Ци&raquo;) по&nbsp;всему телу.
+                            </li>
+                        </ul>
+                        <p class="modal-overlay__text">
+                            В&nbsp;Центре тибетской медицины &laquo;УГМК-Здоровье&raquo; планируется начать проводить
+                            занятия по&nbsp;цигун с&nbsp;середины сентября по&nbsp;четвергам с&nbsp;18:00 или 19:00.
+                            Первые
+                            два занятия планирует провести Лама Чжун Даньчжу. На&nbsp;занятиях: первые 30&ndash;40 минут
+                            Лама будет объяснять теоретическую часть для более глубокого понимания цигун
+                            и&nbsp;формирования
+                            правильного подхода к&nbsp;выполнению упражнений, затем&nbsp;&mdash; практическая часть.
+                        </p>
+                        <p class="modal-overlay__text">
+                            Идёт набор в&nbsp;первую группу. Запись&nbsp;&mdash; у&nbsp;администраторов центра или
+                            по&nbsp;телефону <a href="tel:+73432830808" class="contacts__tel link-reset">283-08-08</a>
+                        </p>
+                        <a href="pages/cigun.html" class="modal__more link-reset">
+                            Узнать подробнее
+                        </a>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="specialists-1">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="modal__header">
+                        <h3 class="modal__title">
+                            Чэнь Ган (陈钢)
+                        </h3>
+                        <p class="modal-overlay__text">
+                            Стаж: 20 лет
+                        </p>
+                    </div>
+                    <div class="modal__content scrollbar">
+                        <h4 class="modal__block-title">Образование</h4>
+                        <p class="modal-overlay__text">
+                            2003&nbsp;г. &mdash;&nbsp;Пекинский университет китайской медицины и&nbsp;лекарственных
+                            трав (北京中医药大学, Beijing University of&nbsp;Chinese Medicine), доктор китайской традиционной
+                            медицины
+                            высшей категории.
+                        </p>
+                        <h4 class="modal__block-title">Специализация</h4>
+                        <p class="modal-overlay__text">
+                            Диагностика по пульсу, языку; лечение фитосборами, иглорефлексотерапия.
+                        </p>
+                        <p class="modal-overlay__text">
+                            <strong>Наставник:</strong> Даньчжу Лама
+                        </p>
+                    </div>
+                </div>
+                <div class="modal" data-target="specialists-2">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="modal__header">
+                        <h3 class="modal__title">
+                            Чжун Гоцинь (钟国琴)
+                        </h3>
+                        <p class="modal-overlay__text">
+                            Стаж: 15 лет
+                        </p>
+                    </div>
+                    <div class="modal__content scrollbar">
+                        <h4 class="modal__block-title">Образование</h4>
+                        <p class="modal-overlay__text">
+                            2011&nbsp;г. &mdash;&nbsp;массажист, потомственный специалист китайской традиционной
+                            медицины.
+                            Родственница Даньчжу Ламы. </p>
+                        <h4 class="modal__block-title">Специализация</h4>
+                        <p class="modal-overlay__text">
+                            Оздоровительный массаж, иглорефлексотерапия при лечении
+                            опорно-двигательного аппарата, лечение остеохондроза, межпозвоночных грыж, болей
+                            в&nbsp;шее и&nbsp;пояснице, головных болей, восстановление подвижности суставов,
+                            проблемы по&nbsp;гинекологии
+                        </p>
+                        <p class="modal-overlay__text">
+                            <strong>Наставник:</strong> Даньчжу Лама
+                        </p>
+                    </div>
+                </div>
+                <div class="modal" data-target="specialists-3">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="modal__header">
+                        <h3 class="modal__title">
+                            Тянь Бо (田波)
+                        </h3>
+                        <p class="modal-overlay__text">
+                            Стаж: 15 лет
+                        </p>
+                    </div>
+                    <div class="modal__content scrollbar">
+                        <h4 class="modal__block-title">Образование</h4>
+                        <p class="modal-overlay__text">
+                            2010 г. — массажист, специалист китайской традиционной медицины. </p>
+                        <h4 class="modal__block-title">Специализация</h4>
+                        <p class="modal-overlay__text">
+                            Оздоровительный массаж, иглорефлексотерапия при лечении
+                            опорно-двигательного аппарата, лечение остеохондроза, межпозвоночных грыж, болей
+                            в&nbsp;шее и&nbsp;пояснице, лечение урологических проблем, проблем малого таза.
+                        </p>
+                        <p class="modal-overlay__text">
+                            <strong>Наставник:</strong> Даньчжу Лама
+                        </p>
+                    </div>
+                </div>
+                <div class="modal" data-target="specialists-4">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="modal__header">
+                        <h3 class="modal__title">
+                            Гун Чжисин (龚智兴)
+                        </h3>
+                        <p class="modal-overlay__text">
+                            Стаж: 6 лет
+                        </p>
+                    </div>
+                    <div class="modal__content scrollbar">
+                        <h4 class="modal__block-title">Образование</h4>
+                        <p class="modal-overlay__text">
+                            Сычуаньский университет китайской традиционной медицины (специализация: физическая культура
+                            и
+                            реабилитация).
+                        </p>
+                        <h4 class="modal__block-title">Специализация</h4>
+                        <p class="modal-overlay__text">
+                            Владеет всеми основными методиками китайской традиционной медицины:
+                            массаж мануальный туйна, скребковый массаж гуаша, баночная терапия, иглорефлексотерапия
+                        </p>
+                        <p class="modal-overlay__text">
+                            В&nbsp;свободное время занимается повышением квалификации и&nbsp;самообразованием.
+                            В&nbsp;настоящее время
+                            получает дополнительное образование на&nbsp;степень доктора китайской медицины.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal" data-target="specialists-5">
+                    <button class="btn-reset button modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
+                            alt="Закрыть окно" class="modal__close">
+                    </button>
+                    <div class="modal__header">
+                        <h3 class="modal__title">
+                            Лэн Цинчен (冷青澄)
+                        </h3>
+                        <p class="modal-overlay__text">
+                            Стаж: более 10 лет
+                        </p>
+                    </div>
+                    <div class="modal__content scrollbar">
+                        <h4 class="modal__block-title">Образование</h4>
+                        <p class="modal-overlay__text">
+                            2018&nbsp;г. &mdash;&nbsp;Нэйцзянский медицинский университет, провинция Сычуань
+                            (специализация:
+                            реабилитация в&nbsp;китайской традиционной медицине).
+                        </p>
+                        <p class="modal-overlay__text">
+                            2022&nbsp;г. &mdash;&nbsp;Сычуаньский университет китайской традиционной медицины
+                            (специализация: технология реабилитационной терапии).
+                        </p>
+                        <p class="modal-overlay__text">
+                            2026&nbsp;г. &mdash;&nbsp;Медицинский колледж&nbsp;г. Чэнду, провинция Сычуань (бакалавр,
+                            специализация: реабилитационная терапия).
+                        </p>
+                        <h4 class="modal__block-title">Специализация</h4>
+                        <p class="modal-overlay__text">
+                            Владеет всеми основными методиками китайской традиционной медицины:
+                            массаж мануальный туйна, скребковый массаж гуаша, баночная терапия, иглорефлексотерапия.
+                            Сочетает методы китайской медицины и&nbsp;современной реабилитации
+                        </p>
+                        <p class="modal-overlay__text">
+                            В свободное время занимается повышением квалификации и самообразованием.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
     <footer>
 
     </footer>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.js"></script>
     <script>
 
@@ -935,6 +1684,8 @@
         let price6 = document.querySelector('.price-6');
         let price7 = document.querySelector('.price-7');
         let price8 = document.querySelector('.price-8');
+        let price9 = document.querySelector('.price-9');
+        let price10 = document.querySelector('.price-10');
 
         let tlLoad = gsap.timeline();
 
@@ -944,16 +1695,20 @@
 
         let tl1 = gsap.timeline({ paused: true });
         let tl2 = gsap.timeline({ paused: true });
+        let tl3 = gsap.timeline({ paused: true });
 
         tl1.from(price1, { duration: 1, opacity: 0 })
             .from(price2, { duration: 1, opacity: 0 })
-            .from(price4, { duration: 1, opacity: 0 })
-            .from(price3, { duration: 1, opacity: 0 });
+            .from(price3, { duration: 1, opacity: 0 })
+            .from(price4, { duration: 1, opacity: 0 });
 
-        tl2.from(price6, { duration: 1, opacity: 0 })
-            .from(price5, { duration: 1, opacity: 0 })
+        tl2.from(price5, { duration: 1, opacity: 0 })
+            .from(price6, { duration: 1, opacity: 0 })
             .from(price7, { duration: 1, opacity: 0 })
             .from(price8, { duration: 1, opacity: 0 });
+
+        tl3.from(price9, { duration: 1, opacity: 0 })
+            .from(price10, { duration: 1, opacity: 0 });
 
         function onEntry(entry) {
             entry.forEach(change => {
@@ -976,12 +1731,29 @@
                 }
             });
         }
+
         let observer2 = new IntersectionObserver(onEntry2, options);
         let elements2 = document.querySelectorAll('.block-2');
         for (let elm of elements2) {
             observer2.observe(elm);
         }
+
+        function onEntry3(entry) {
+            entry.forEach(change => {
+                if (change.isIntersecting) {
+                    tl3.play()
+                }
+            });
+        }
+
+        let observer3 = new IntersectionObserver(onEntry3, options);
+        let elements3 = document.querySelectorAll('.block-3');
+        for (let elm of elements3) {
+            observer3.observe(elm);
+        }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 
 </html>

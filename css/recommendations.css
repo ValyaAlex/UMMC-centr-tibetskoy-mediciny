@@ -1,0 +1,171 @@
+.recommendations {
+    padding-top: 100px;
+}
+
+.recommendations .title {
+    margin-bottom: 10px;
+}
+
+.swiper-recommendations {
+    height: 645px;
+}
+
+.recommendations__pagination-container {
+    position: relative;
+    width: 15%;
+    height: 80px;
+}
+
+.swiper__fraction {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--white);
+    display: none;
+    margin-bottom: 15px;
+}
+
+.fraction--active {
+    display: inline-block;
+}
+
+.recommendations__pagination-container {
+    position: relative;
+    -webkit-transform: translate(25px, 50px);
+    -ms-transform: translate(25px, 50px);
+    transform: translate(25px, 50px);
+    width: 7%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.recommendations__pagination-container .swiper-pagination {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    -webkit-transform: translateY(-17px);
+    -ms-transform: translateY(-17px);
+    transform: translateY(-17px);
+}
+
+.recommendations__pagination-container .swiper-button-prev::after {
+    content: "";
+}
+
+.recommendations__pagination-container .swiper-button-next:after,
+.recommendations__pagination-container .swiper-rtl .swiper-button-next:after {
+    content: "";
+}
+
+.recommendations__pagination-container .swiper-button-prev,
+.recommendations__pagination-container .swiper-button-next {
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    -webkit-transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.recommendations__pagination-container .swiper-button-next,
+.recommendations__pagination-container .swiper-button-prev {
+    -webkit-transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    transform: translateX(35px);
+    background-image: url(../icon/swiper-arrow-white.svg);
+    background-size: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.recommendations__pagination-container .swiper-button-prev {
+    -webkit-transform: translateX(-35px) rotate(180deg);
+    -ms-transform: translateX(-35px) rotate(180deg);
+    transform: translateX(-35px) rotate(180deg);
+}
+
+.swiper-recommendations .swiper-pagination {
+    position: absolute;
+    top: 0;
+}
+
+.recommendations-block .swiper-button-prev,
+.recommendations-block .swiper-rtl .swiper-button-next {
+    left: 15%;
+    right: auto;
+    top: 0%;
+}
+
+.recommendations-block .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: -10%;
+    top: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.recommendations .swiper-pagination-fraction {
+    left: 10%;
+}
+
+.recommendations__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--white);
+    border-radius: 40px;
+}
+
+.recommendations__left {
+    width: 45%;
+}
+
+.recommendations__picture {
+    width: 53%;
+}
+
+.recommendations__text {
+    padding: 32px 20px 0 20px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.recommendations__autor {
+    margin: 0;
+    font-style: italic;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+.recommendations__picture {
+    height: 640px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.img-1 {
+    background-image: url(../img/recommendation-1.webp);
+}
+
+.img-2 {
+    background-image: url(../img/recommendation-2.webp);
+}
+
+.img-3 {
+    background-image: url(../img/recommendation-3.webp);
+}
+
+.img-4 {
+    background-image: url(../img/recommendation-4.webp);
+}

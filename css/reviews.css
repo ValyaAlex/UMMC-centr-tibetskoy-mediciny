@@ -3,7 +3,11 @@
     padding-top: 100px;
 }
 
-.swiper {
+.reviews .container {
+    position: relative;
+}
+
+.reviews .swiper {
     height: 570px;
 }
 
@@ -77,13 +81,13 @@
 
 .reviews .swiper-button-prev,
 .reviews .swiper-rtl .swiper-button-next {
-    right: 13.5%;
+    right: 3.5%;
     left: auto;
 }
 
 .reviews .swiper-button-next,
 .reviews .swiper-rtl .swiper-button-prev {
-    right: 10%;
+    right: 0%;
 }
 
 .reviews .swiper-button-next:after,

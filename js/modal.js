@@ -1,4 +1,4 @@
-const btn = document.querySelectorAll('.price__modal');
+const btn = document.querySelectorAll('.open-modal');
 const modalOverlay = document.querySelector('.modal-overlay');
 const modals = document.querySelectorAll('.modal');
 const closed = document.querySelectorAll('.modal__close');
